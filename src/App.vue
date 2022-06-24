@@ -143,7 +143,7 @@
             <SideBarLink link="/Overig/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
             <SideBarLink link="/Overig/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
          </SideBarGroup>
-         <SideBarGroup title="Informatie Vinden" link="/Overig/OverDezeWebsite">
+         <SideBarGroup title="Over deze website" link="/Overig/OverDezeWebsite">
             <SideBarLink link="/Overig/OverDezeWebsite#Algemeen">Algemeen</SideBarLink>
             <SideBarLink link="/Overig/OverDezeWebsite#Technologieen">Technologieën</SideBarLink>
          </SideBarGroup>
