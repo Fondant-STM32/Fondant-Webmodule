@@ -56,6 +56,7 @@
          Elk apparaat op de bus dient een ander adres te hebben, om te voorkomen dat meerdere apparaten reageren.
       </p>
 
+      <hr class="spacer">
       <h2 id="Werking">Werking</h2>
 
 
@@ -126,6 +127,7 @@
          op dezelfde bus te hebben zonder problemen.
       </p>
 
+      <hr class="spacer">
       <h2 id="Visueel">Visueel</h2>
 
       <div class="alert alert-warning">

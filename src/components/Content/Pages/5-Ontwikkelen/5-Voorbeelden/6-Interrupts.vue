@@ -50,16 +50,16 @@
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
-#include &lt;fd/fondant_main.hpp&gt;
+#include &lt;fd/fd_main.hpp&gt;
 
 // Include voor fd::sleep
 #include &lt;fd/fondant.hpp&gt;
 
 // Include de GPIO module
-#include &lt;fd/gpio.hpp&gt;
+#include &lt;fd/modules/gpio.hpp&gt;
 
 // Include de interrupt module. Deze zorgt automatisch dat platformspecifieke onderdelen geladen worden
-#include &lt;fd/interrupt.hpp&gt;
+#include &lt;fd/modules/interrupt.hpp&gt;
 
 int fd_main() {
    // Maak een pin_out aan voor de Onboard LED
@@ -124,7 +124,7 @@ export default {
       CarouselImage,
       ImageCarousel
    },
-   title: "Fondant Instellen",
+   title: "VB: Interrupts",
    mixins: [titleMixin]
 }
 </script>

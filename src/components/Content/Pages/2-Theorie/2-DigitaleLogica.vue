@@ -10,8 +10,8 @@
             class="emph">laag</span> is.
       </p>
 
-      <h2 class="mt-5" id="Basis">Basis</h2>
-      <hr>
+      <hr class="spacer">
+      <h2 id="Basis">Basis</h2>
       <h4>Hoog/Laag</h4>
 
       <p>
@@ -54,18 +54,17 @@
       </p>
 
       <hr class="spacer">
-
-      <h2>GPIO In MicroControllers</h2>
-
+      <h2>GPIO</h2>
       <p>
          De meeste microcontrollers hebben een GPIO-module (General Purpose Input Output), waarmee geinteracteerd kan
          worden
          met fysieke pins op de microcontroller.
-         Hiermee kunnen pins aangestuurd en uitgelezen worden.
+         Hiermee kunnen pins aangestuurd en uitgelezen worden. De volgende onderdelen gaan over soorten GPIO pins in
+         microcontrollers
       </p>
 
-      <h3 class="mt-5" id="OutputPin">Output Pin (Push/Pull)</h3>
-      <hr>
+      <hr class="spacer">
+      <h2 id="OutputPin">Output Pin (Push/Pull)</h2>
 
       <p>
          Een pin kan ingesteld worden als Output pin. Als een pin is ingesteld als output kan 1 naar een bijbehorend register
@@ -83,8 +82,8 @@
          we een weerstand om deze te beperken.
       </p>
 
-      <h3 class="mt-5" id="InputPin">Input pin</h3>
-      <hr>
+      <hr class="spacer">
+      <h2 id="InputPin">Input pin</h2>
       <p>
          Een pin kan ook ingesteld worden als Input pin. Je kan dan een bijbehorend register van de pin uitlezen, om te
          zien of er een hoog signaal(1) of een laag signaal(0) op de pin staat.
@@ -165,8 +164,8 @@
       </p>
 
 
-      <h3 class="mt-5" id="OpenCollectorPin">Open Collector / Open Drain</h3>
-      <hr>
+      <hr class="spacer">
+      <h2 id="OpenCollectorPin">Open Collector / Open Drain</h2>
       <p>
          In specifieke situaties is het soms niet handig om een standaard Push-Pull Output pin te hebben. Gelukkig
          bieden de interne pull-ups van microcontrollers hier ook een oplossing

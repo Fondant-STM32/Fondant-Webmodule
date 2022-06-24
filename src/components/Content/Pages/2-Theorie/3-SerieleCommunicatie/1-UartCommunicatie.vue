@@ -130,7 +130,6 @@
       <hr class="spacer">
 
       <h2 id="TryItOut">Try it out!</h2>
-      <hr>
       <p>
          In de onderstaande configurator kan je de parameters van UART aanpassen, en zien hoe deze het
          signaal beïnvloeden.

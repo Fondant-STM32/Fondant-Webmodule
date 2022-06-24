@@ -50,13 +50,13 @@
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
-#include &lt;fd/fondant_main.hpp&gt;
+#include &lt;fd/fd_main.hpp&gt;
 
 // Include basisfuncties van fondant (nodig voor fd::sleep)
 #include &lt;fd/fondant.hpp&gt;
 
 // Include de GPIO module
-#include &lt;fd/gpio.hpp&gt;
+#include &lt;fd/modules/gpio.hpp&gt;
 
 int fd_main() {
    // LET OP: voordat een pin_out werkt moet deze al ingesteld zijn op de microcontroller als pin_out (dus in de STM32 IDE)
@@ -95,7 +95,7 @@ export default {
       ImageCarousel,
       CarouselImage
    },
-   title: "Fondant Instellen",
+   title: "VB: Hello World",
    mixins: [titleMixin]
 }
 </script>

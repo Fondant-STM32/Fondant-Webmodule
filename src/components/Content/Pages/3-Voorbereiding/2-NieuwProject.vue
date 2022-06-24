@@ -32,10 +32,10 @@
 import titleMixin from "@/components/Helpers/titleMixin";
 
 export default {
-  name: "NieuwProjectHandmatig",
+  name: "NieuwProject",
   components: {
   },
-   title: "Nieuw project (Handmatig)",
+   title: "Nieuw project",
    mixins: [titleMixin]
 }
 </script>

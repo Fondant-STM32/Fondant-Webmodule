@@ -52,10 +52,10 @@
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
-#include &lt;fd/fondant_main.hpp&gt;
+#include &lt;fd/fd_main.hpp&gt;
 
 // Include de GPIO module
-#include &lt;fd/gpio.hpp&gt;
+#include &lt;fd/modules/gpio.hpp&gt;
 
 int fd_main() {
    // LET OP: voordat een pin_out of pin_in werkt moet deze al ingesteld zijn op de microcontroller als pin_out (dus in de STM32 IDE)
@@ -127,7 +127,7 @@ export default {
       CarouselImage,
       ExtImage
    },
-   title: "Fondant Instellen",
+   title: "VB: Pin In Pin Out",
    mixins: [titleMixin]
 }
 </script>

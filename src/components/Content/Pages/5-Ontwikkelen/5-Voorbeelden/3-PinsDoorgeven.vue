@@ -32,10 +32,10 @@
 
       <CodeFragment type="cpp"><pre>
 // Include voor fd_main omleiding
-#include &lt;fd/fondant_main.hpp&gt;
+#include &lt;fd/fd_main.hpp&gt;
 
 // Include de GPIO module
-#include &lt;fd/gpio.hpp&gt;
+#include &lt;fd/modules/gpio.hpp&gt;
 
 // Gebruik de pin_out_base en pin_in_base klassen om nauwe koppeling met een specifiek platform te vermijden
 // Bij het wisselen van platform hoeft nu alleen de constructie van pins in fd_main() aangepast te worden
@@ -80,7 +80,7 @@ export default {
    components: {
       CodeFragment,
    },
-   title: "Fondant Instellen",
+   title: "VB: Pins doorgeven",
    mixins: [titleMixin]
 }
 </script>

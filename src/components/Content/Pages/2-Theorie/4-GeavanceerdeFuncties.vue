@@ -19,8 +19,7 @@
 
 
       <hr class="spacer">
-
-      <h2 id="DMA">DMA </h2>
+      <h2 id="DMA">DMA (Direct Memory Access)</h2>
 
       <h3>Zonder DMA</h3>
       <p>

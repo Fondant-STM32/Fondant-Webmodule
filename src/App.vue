@@ -3,10 +3,10 @@
    <SideBar title="Fondant" link="/">
       <template v-slot:sidebar>
          <h5>Fondant</h5>
-         <SideBarGroup title="Introductie" link="/Fondant/WatIsFondant">
-            <SideBarLink link="/Fondant/WatIsFondant#DeDocumentatie">De Documentatie</SideBarLink>
-            <SideBarLink link="/Fondant/WatIsFondant#DeLibrary">De Library</SideBarLink>
-            <SideBarLink link="/Fondant/WatIsFondant#DeNaam">De Naam</SideBarLink>
+         <SideBarGroup title="Introductie" link="/">
+            <SideBarLink link="/#DeDocumentatie">De Documentatie</SideBarLink>
+            <SideBarLink link="/#DeLibrary">De Library</SideBarLink>
+            <SideBarLink link="/#DeNaam">De Naam</SideBarLink>
 
          </SideBarGroup>
 
@@ -97,22 +97,39 @@
          <hr>
          <h5>Ontwikkelen</h5>
 
+         <SideBarGroup title="Een Programma Uitvoeren" link="/Ontwikkelen/EenProgrammaUitvoeren">
+            <SideBarLink link="/Ontwikkelen/EenProgrammaUitvoeren#Nodig">Nodig</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/EenProgrammaUitvoeren#AansluitenEnFlashen">Aansluiten en flashen</SideBarLink>
+         </SideBarGroup>
+
          <SideBarGroup title="Ontwikkelen met Fondant" link="/Ontwikkelen/OntwikkelenMetFondant">
+            <SideBarLink link="/Ontwikkelen/OntwikkelenMetFondant#Algemeen">Algemeen</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/OntwikkelenMetFondant#Onderdelen">Onderdelen</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/OntwikkelenMetFondant#Tips">Tips</SideBarLink>
          </SideBarGroup>
 
          <SideBarGroup title="De Debugger" link="/Ontwikkelen/DeDebugger">
+            <SideBarLink link="/Ontwikkelen/DeDebugger#DebugsessieStarten">Debugsessie starten</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeDebugger#BreakpointsEnAnalyse">Breakpoints en analyse</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeDebugger#Stepping">Stepping</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeDebugger#Notities">Notities</SideBarLink>
          </SideBarGroup>
 
-         <SideBarGroup title="De Logic Analyser" link="/Ontwikkelen/DeLogicAnalyser">
+         <SideBarGroup title="De Logic Analyzer" link="/Ontwikkelen/DeLogicAnalyzer">
+            <SideBarLink link="/Ontwikkelen/DeLogicAnalyzer#WelkeAnalyer">Welke analyzer</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeLogicAnalyzer#SoftwareStarten">De Software starten</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeLogicAnalyzer#Aansluiten">Aansluiten</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeLogicAnalyzer#AnalyserenDecoderen">Analyseren/decoderen</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/DeLogicAnalyzer#HetResultaat">Het resultaat</SideBarLink>
          </SideBarGroup>
 
          <SideBarGroup title="Voorbeelden" link="/Ontwikkelen/Voorbeelden">
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/HelloWorld">Hello World! (blink)</SideBarLink>
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/PinInPinOut">Pin in + Pin out</SideBarLink>
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/Pinsdoorgeven">Pins doorgeven</SideBarLink>
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/SPI">SPI</SideBarLink>
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/SPIDMA">SPI met DMA</SideBarLink>
-            <SideBarLink link="/Ontwikkelen/Voorbeelden/Interrupts">Interrupts</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/HelloWorld#">Hello World! (blink)</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/PinInPinOut#">Pin in + Pin out</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/Pinsdoorgeven#">Pins doorgeven</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/SPI#">SPI</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/SPIDMA#">SPI met DMA</SideBarLink>
+            <SideBarLink link="/Ontwikkelen/Voorbeelden/Interrupts#">Interrupts</SideBarLink>
          </SideBarGroup>
 
          <hr>
@@ -126,7 +143,10 @@
             <SideBarLink link="/Overig/InformatieVinden#HetSensorBoard">Het sensorboard</SideBarLink>
             <SideBarLink link="/Overig/InformatieVinden#DeSensorProcessor">De Sensor Processor</SideBarLink>
          </SideBarGroup>
-
+         <SideBarGroup title="Informatie Vinden" link="/Overig/OverDezeWebsite">
+            <SideBarLink link="/Overig/OverDezeWebsite#Algemeen">Algemeen</SideBarLink>
+            <SideBarLink link="/Overig/OverDezeWebsite#Technologieen">Technologieën</SideBarLink>
+         </SideBarGroup>
       </template>
 
       <template v-slot:content>
@@ -188,7 +208,7 @@ export default {
 }
 
 hr.spacer {
-   margin-bottom: 50px;
+   /*margin-bottom: 50px;*/
    margin-top: 50px;
 }
 

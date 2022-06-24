@@ -62,8 +62,12 @@
 </template>
 
 <script>
+import titleMixin from "@/components/Helpers/titleMixin";
+
 export default {
-   name: "4-Voorbeelden"
+   name: "4-Voorbeelden",
+   title: "Voorbeelden",
+   mixins: [titleMixin]
 }
 </script>
 

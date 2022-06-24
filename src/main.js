@@ -25,18 +25,20 @@ import STMProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProjec
 import CLionProject from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject/2-CLionProject";
 import FondantToevoegen from "@/components/Content/Pages/3-Voorbereiding/2-NieuwProject/3-FondantToevoegen";
 
-import OntwikkelenMetFondant from "@/components/Content/Pages/5-Ontwikkelen/1-OntwikkelenMetFondant.vue"
-import DeDebugger from "@/components/Content/Pages/5-Ontwikkelen/2-DeDebugger.vue"
-import DeLogicAnalyzer from "@/components/Content/Pages/5-Ontwikkelen/3-DeLogicAnalyzer.vue"
-import Voorbeelden from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden.vue"
-import HelloWorld from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/1-HelloWorld";
-import PinInPinOut from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/2-PinInPinOut";
-import PinsDoorgeven from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/3-PinsDoorgeven";
-import SPI from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/4-SPI";
-import SPIDMA from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/5-SPI-DMA";
-import Interrupts from "@/components/Content/Pages/5-Ontwikkelen/4-Voorbeelden/6-Interrupts";
+import EenProgrammaUitvoeren from "@/components/Content/Pages/5-Ontwikkelen/1-EenProgrammaUitvoeren.vue"
+import OntwikkelenMetFondant from "@/components/Content/Pages/5-Ontwikkelen/2-OntwikkelenMetFondant.vue"
+import DeDebugger from "@/components/Content/Pages/5-Ontwikkelen/3-DeDebugger.vue"
+import DeLogicAnalyzer from "@/components/Content/Pages/5-Ontwikkelen/4-DeLogicAnalyzer.vue"
+import Voorbeelden from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden.vue"
+import HelloWorld from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/1-HelloWorld";
+import PinInPinOut from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/2-PinInPinOut";
+import PinsDoorgeven from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/3-PinsDoorgeven";
+import SPI from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/4-SPI";
+import SPIDMA from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/5-SPI-DMA";
+import Interrupts from "@/components/Content/Pages/5-Ontwikkelen/5-Voorbeelden/6-Interrupts";
 
 import InformatieVinden from "@/components/Content/Pages/6-Overig/1-InformatieVinden";
+import OverDezeWebsite from "@/components/Content/Pages/6-Overig/2-OverDezeWebsite";
 
 
 import Vue3HighlightEs from "vue3-highlightjs";
@@ -46,11 +48,6 @@ const routes = [
     // Home
     {
         path: "/",
-        name: "Home",
-        component: WatIsFondant
-    },
-    {
-        path: "/Fondant/WatIsFondant",
         name: "Home",
         component: WatIsFondant
     },
@@ -121,6 +118,11 @@ const routes = [
 
     // Ontwikkeling
     {
+        path: "/Ontwikkelen/EenProgrammaUitvoeren",
+        name: "EenProgrammaUitvoeren",
+        component: EenProgrammaUitvoeren
+    },
+    {
         path: "/Ontwikkelen/OntwikkelenMetFondant",
         name: "OntwikkelenMetFondant",
         component: OntwikkelenMetFondant
@@ -176,6 +178,11 @@ const routes = [
         path: "/Overig/InformatieVinden",
         name: "InformatieVinden",
         component: InformatieVinden
+    },
+    {
+        path: "/Overig/OverDezeWebsite",
+        name: "OverDezeWebsite",
+        component: OverDezeWebsite
     }
 ]
 

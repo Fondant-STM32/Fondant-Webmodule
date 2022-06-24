@@ -107,31 +107,8 @@
          Klik in de pin-configurator op SYS, en stel Debug in op "Serial Wire".
       </p>
 
-     <hr class="spacer">
 
 
-
-
-     <h4>Main Code</h4>
-
-     <CodeFragment type="cpp">
-        <pre>
-#include &lt;fd/fondant_main.hpp&gt;
-#include &lt;fd/fondant.hpp&gt;
-#include &lt;fd/targets/stm32_hal/gpio.hpp&gt;
-
-int fd_main() {
-   fd::stm32_hal::pin_out internal_led(GPIOC, GPIO_PIN_13);
-
-   while(true) {
-      fd::sleep(1000);
-      internal_led.toggle();
-   }
-
-   return 0;
-}
-        </pre>
-     </CodeFragment>
 
 
   </div>
@@ -139,7 +116,6 @@ int fd_main() {
 
 <script>
 import titleMixin from "@/components/Helpers/titleMixin";
-import CodeFragment from "@/components/Helpers/CodeFragment";
 import ImageCarousel from "@/components/Carousel/ImageCarousel";
 import CarouselImage from "@/components/Carousel/CarouselImage";
 import ExtImage from "@/components/Helpers/ExtImage";
@@ -147,7 +123,6 @@ import ExtImage from "@/components/Helpers/ExtImage";
 export default {
   name: "STMProject",
   components: {
-     CodeFragment,
      ImageCarousel,
      CarouselImage,
      ExtImage

@@ -15,7 +15,7 @@
         Hiermee kan de lezer na het doornemen van de theorie direct mee aan de slag om deze toe te passen.
      </p>
 
-
+     <hr class="spacer">
      <h2 id="DeDocumentatie">De documentatie</h2>
      <p>
         De documentatie is zo opgebouwd dat de onderwerpen in de zijbalk het beste van boven naar beneden doorgenomen kunnen
@@ -42,6 +42,7 @@
         in de Fondant library zijn toegelicht, om context te geven voor bepaalde keuzes.
      </p>
 
+     <hr class="spacer">
      <h2 id="DeLibrary">De Library</h2>
      <p>
          De Fondant Library is bedoeld als uitgangspunt om met de geleerde theorie aan de slag te gaan. De library is gebouwd
@@ -56,6 +57,7 @@
         embedded-ontwikkelaar, en licht waar nodig risico's en gebruikswijzen van functies toe.
      </p>
 
+     <hr class="spacer">
      <h2 id="DeNaam">De naam "Fondant"</h2>
      <p>
         De fondant-library is expliciet niet bedoeld voor gebruik in productie-omgevingen en professionele projecten. Het doel ervan
