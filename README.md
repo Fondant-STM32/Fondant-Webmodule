@@ -1,24 +1,19 @@
-# pinno-webmodule
+# Fondant Documentatie
 
-## Project setup
-```
-npm install
-```
+Dit is de repository voor de documentatie van de Fondant lesmodule.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+In de lesmodule wordt de basis van werken met microcontrollers uitgelegd, en 
+maakt de lezer kennis met het STM32 platform op een praktische wijze. Een live
+versie van deze documentatie is te vinden op [https://fondantlib.nl](https://fondantlib.nl).
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Voor deze module is er ook een library ontwikkeld om STM32 processoren aan te sturen
+op een objectgeoriënteerde wijze in C++. Deze is te vinden op [github.com](https://github.com/Fondant-STM32/Fondant)
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Technologieën
+Deze webmodule maakt gebruik van de volgende libraries/frameworks.
+
+- [VueJS](https://vuejs.org/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [WaveDrom](https://wavedrom.com/) 
+- [Vue3Highlightjs](https://github.com/Daizhen1995/vue3-highlightjs)
