@@ -3,11 +3,11 @@
     <h1>Wat is een microcontroller?</h1>
     <hr>
     <p>
-      Tijdens de cursus ben je waarschijnlijk al een aantal keren tegen begrippen zoals microcontroller en embedded
+      Tijdens de cursus ben je waarschijnlijk al een aantal keren tegen begrippen zoals <DefRef n="microcontroller"/> en <DefRef n="embedded"/>
       aangelopen,
       maar wat betekent dit eigenlijk precies? In dit hoofdstuk gaan we in op de verschillen tussen standaard computers
-      en embedded systemen,
-      en nemen we door hoe een microcontroller in het algemeen werkt.
+      en <DefRef n="embedded" display="embedded systemen"/>,
+      en nemen we door hoe een <DefRef n="microcontroller"/> in het algemeen werkt.
     </p>
 
     <hr class="spacer">
@@ -83,56 +83,55 @@
         kan worden aangepast tijdens het draaien van het programma, waar in het datageheugen vrij geschreven kan worden.
       </p>
 
-      <p class="fst-italic">Let op: Instructiegeheugen/Datageheugen zijn niet hetzelfde als ROM/RAM. Hierover meer in
-        het onderdeel ROM/RAM</p>
-
-
+      <p class="fst-italic">Let op: Instructiegeheugen/Datageheugen zijn niet hetzelfde als <DefRef n="ROM"/>/<DefRef n="RAM"/>.
+       De laaatste twee worden in software bepaald, en hoeven niet gekoppeld te zijn aan hardwarelimieten.
+      </p>
       <h3>Verschillen</h3>
 
       <h4>Zelfstandigheid</h4>
       <p>
-        In de vorige onderdelen heb je kunnen zien dat een microprocessor en microcontroller in
+        In de vorige onderdelen heb je kunnen zien dat een <DefRef n="microprocessor"/> en <DefRef n="microcontroller"/> in
         processor-architectuur erg veel op elkaar lijken. Toch is er een belangrijk verschil in de uiteindelijke chip.
-        In een microcontroller zit in het silicone niet alleen de processor, maar ook het instructiegeheugen, het
+        In een <DefRef n="microcontroller"/> zit in het silicone niet alleen de processor, maar ook het instructiegeheugen, het
         datageheugen en peripherals (deze komen later nog aan bod).
       </p>
 
       <p>
-        Waar een microprocessor dus afhankelijk is van externe onderdelen en elektrische verbindingen  heeft een
-        microcontroller deze niet nodig.
+        Waar een <DefRef n="microprocessor"/> dus afhankelijk is van externe onderdelen en elektrische verbindingen  heeft een
+        <DefRef n="microcontroller"/> deze niet nodig.
       </p>
 
       <p>
-        Als je een microcontroller waar een programma op staat aansluit op een stroombron, en bijvoorbeeld een knop en
-        een karakter-lcd, kan de microcontroller deze aansturen volgens de geschreven programmalogica.
+        Als je een <DefRef n="microcontroller"/> waar een programma op staat aansluit op een stroombron, en bijvoorbeeld een knop en
+        een karakter-lcd, kan de <DefRef n="microcontroller"/> deze aansturen volgens de geschreven programmalogica.
       </p>
 
       <p>
-        Voordat een microprocessor ditzelfde kan doen heeft deze in ieder geval een extern geheugen nodig (waar de
+        Voordat een <DefRef n="microprocessor"/> ditzelfde kan doen heeft deze in ieder geval een extern geheugen nodig (waar de
         programmacode opstaat), en mogelijk ook een i/o onderdeel wat de karakter-lcd kan aansturen.
       </p>
 
       <h4>Energieverbruik</h4>
       <p>
-        Zoals eerder genoemd zijn microcontrollers vaak een stuk zuiniger dan microprocessoren. Hierdoor kunnen
-        microcontrollers gebruikt worden op kleine batterijen en accu’s (gelijk in capaciteit aan bijvoorbeeld AA/AAA
-        batterijen). Ook hebben microcontrollers vaak een energiebesparende stand waar ze naartoe kunnen schakelen
+        Zoals eerder genoemd zijn <DefRef n="microcontroller" display="microcontrollers"/> vaak een stuk zuiniger dan <DefRef n="microprocessor" display="microprocessoren"/>. Hierdoor kunnen
+        <DefRef n="microcontroller" display="microcontrollers"/> gebruikt worden op kleine batterijen en accu’s (gelijk in capaciteit aan bijvoorbeeld AA/AAA
+        batterijen). Ook hebben <DefRef n="microcontroller" display="microcontrollers"/> vaak een energiebesparende stand waar ze naartoe kunnen schakelen
         wanneer ze niet aan hoeven te staan.
       </p>
 
       <h4>Peripherals</h4>
       <p>
-        Microcontrollers hebben vaak ingebouwd ook een aantal peripherals zitten. Dit zijn stukjes hardware die
+        <DefRef n="microcontroller" display="Microcontrollers"/> hebben vaak ingebouwd ook een aantal peripherals zitten. Dit zijn stukjes hardware die
         voor specifieke berekeningen/handelingen zorgen. Denk bijvoorbeeld aan een ethernet-controller, een
         SPI-communicatiebus of een timer die in te stellen is om precies 120 keer per seconde een signaaltje te sturen.
-        Bij een standaard computer is het gebruikelijker dat dit soort onderdelen op het moederbord aanwezig zijn in
+        Bij gebruik van een standaard <DefRef n="microprocessor"/> is het gebruikelijker dat dit soort onderdelen op het moederbord aanwezig zijn in
         plaats van in de processor-chip.
       </p>
 
       <h4>Complexe berekeningen</h4>
       <p>
-        Omdat microcontrollers een simpele instructieset hebben zijn complexe berekeningen vaak een stuk langzamer. Op
-        heel veel microcontrollers is er bijvoorbeeld geen kommagetalleneenheid (Floating Point Unit, FPU). Tijdens het
+        Omdat <DefRef n="microcontroller" display="microcontrollers"/> een simpele instructieset hebben zijn complexe berekeningen vaak een stuk langzamer. Op
+        heel veel <DefRef n="microcontroller" display="microcontrollers"/> is er bijvoorbeeld geen kommagetalleneenheid (Floating Point Unit, FPU). Tijdens het
         programmeren met kommagetallen zal je hier weinig
         van merken, maar tijdens het compileren van de code past de compiler veel trucjes toe om de berekeningen te
         kunnen doen zonder FPU. Hier zijn in de praktijk vaak erg veel losse instructies voor nodig, waardoor de
@@ -140,8 +139,8 @@
       </p>
 
       <p>
-        Hiernaast zal je rekening moeten houden met het langzamer tikken van de processor. Waar een computer-processor
-        vaak werkt met snelheden van 2 GhZ of meer, moet je bij microcontrollers eerder denken aan een snelheid van ongeveer 80mHz. Dit
+        Hiernaast zal je rekening moeten houden met het langzamer tikken van de processor. Waar een <DefRef n="microprocessor"/>
+        vaak werkt met snelheden van 2 GhZ of meer, moet je bij <DefRef n="microcontroller" display="microcontrollers"/> eerder denken aan een snelheid van ongeveer 80mHz. Dit
         zorgt ervoor dat inefficiente software al snel een grote invloed heeft op het aantal berekeningen wat je per
         seconde kan uitvoeren.
       </p>
@@ -154,32 +153,32 @@
     <div>
       <h2 id="EmbeddedSystemen">Embedded systemen</h2>
       <p>
-        Wanneer je bezig bent met onderwerpen zoals Microcontrollers, Raspberry Pi en Arduino, zal je heel vaak de term
-        Embedded tegenkomen. Maar wat betekent dit eigenlijk?
+        Wanneer je bezig bent met onderwerpen zoals Microcontrollers, <DefRef n="RaspberryPi" display="Raspberry Pi"/> en <DefRef n="Arduino"/>, zal je heel vaak de term
+        <DefRef n="embedded"/> tegenkomen. Maar wat betekent dit eigenlijk?
       </p>
 
       <p>
-        We gebruiken de term Embedded (Ingebed) om een computersysteem aan te duiden wat in een product/voorwerp is
+        We gebruiken de term <DefRef n="embedded"/> (ingebed) om een computersysteem aan te duiden wat in een product/voorwerp is
         ingebouwd. Het doel hiervan is om het voorwerp extra “slim gedrag” te geven, wat het van zichzelf niet kan.
       </p>
 
       <p>
         Het kan hierbij om iets simpels gaan als een chip in een koelkast die de temperatuur op een slimme manier regelt
         op basis van een aantal sensoren. Maar in diezelfde koelkast zou ook een chip kunnen zitten die detecteert
-        hoeveel melk er nog is, en bijbestelt als het bijna op is. Beiden zijn voorbeelden van een Embedded systeem, al
+        hoeveel melk er nog is, en bijbestelt als het bijna op is. Beiden zijn voorbeelden van een <DefRef n="embedded"/> systeem, al
         zal er in de laatste waarschijnlijk een stuk uitgebreidere software, en een stuk meer elektronica zitten.
       </p>
 
       <p>
-        Doordat Embedded systemen vaak klein moeten zijn, en uitgerust zijn voor één specifiek doel, wordt er door
-        fabrikanten meestal gekozen om microcontrollers hiervoor te gebruiken. Toch hoeft dit niet altijd zo te zijn.
+        Doordat <DefRef n="embedded"/> systemen vaak klein moeten zijn, en uitgerust zijn voor één specifiek doel, wordt er door
+        fabrikanten meestal gekozen om <DefRef n="microcontroller" display="microcontrollers"/> hiervoor te gebruiken. Toch hoeft dit niet altijd zo te zijn.
         Het computersysteem van een Smart TV is een voorbeeld van een Embedded Systeem wat vaak gebouwd is met een
-        Microprocessor.
+        <DefRef n="microprocessor"/>.
       </p>
 
       <p>
-        Het onderscheid tussen embedded en niet-embedded zal niet altijd zwart-wit zijn. De makkelijkste manier om
-        embedded systemen te onderscheiden is waarschijnlijk op basis van de volgende criteria;
+        Het onderscheid tussen <DefRef n="embedded"/> en niet-embedded zal niet altijd zwart-wit zijn. De makkelijkste manier om
+        <DefRef n="embedded"/> systemen te onderscheiden is waarschijnlijk op basis van de volgende criteria;
       </p>
       <ol>
         <li>Het systeem is deel van een groter geheel (het smart-gedeelte is deel van de TV)</li>
@@ -193,11 +192,15 @@
 
 <script>
 import titleMixin from "@/components/Helpers/titleMixin";
+import DefRef from "@/components/Helpers/DefRef";
 
 export default {
   name: "WatIsEenMicrocontroller",
    title: "Wat is een Microcontroller",
-   mixins: [titleMixin]
+   mixins: [titleMixin],
+   components: {
+     DefRef
+   }
 }
 </script>
 

@@ -20,20 +20,22 @@
         Het is aan te raden om dit handmatige proces minimaal één keer door te lopen, om te begrijpen welke uitdagingen
         er zijn bij het aanmaken hiervan. Hierna kan ook altijd een template-repository gebruikt worden. Hierin zijn al
         deze handelingen al uitgevoerd voor één specifieke processor. Er zullen template repositories aangemaakt worden
-        voor een aantal veelgebruikte processoren.
+        voor een aantal veelgebruikte processoren/ontwikkelboards.
      </p>
      <ul>
-        <li>TODO templates</li>
+        <li>STM32 BluePill <ExtLink to="https://github.com/Fondant-STM32/Template-BluePill-STM32F103C8T6"></ExtLink></li>
      </ul>
   </div>
 </template>
 
 <script>
 import titleMixin from "@/components/Helpers/titleMixin";
+import ExtLink from "@/components/Helpers/ExtLink";
 
 export default {
   name: "NieuwProject",
   components: {
+     ExtLink
   },
    title: "Nieuw project",
    mixins: [titleMixin]

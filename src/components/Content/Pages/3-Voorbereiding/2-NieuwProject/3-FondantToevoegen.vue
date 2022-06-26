@@ -12,6 +12,11 @@
       <hr class="spacer">
       <h2 id="FondantKopie">Fondant kopiëren</h2>
 
+      <p>
+         Download allereerst de bestanden voor de library. De nieuwste versie van de library is te vinden op
+         <ExtLink to="https://github.com/Fondant-STM32/Fondant/releases"></ExtLink>
+      </p>
+
       <ExtImage :src="require('@/assets/HelloWorld/16-InstallFondant.png')"></ExtImage>
       <p>
          Om Fondant te installeren hoef je alleen 2 mappen toe te voegen. De map fd waar .hpp bestanden instaan, en de map
@@ -119,12 +124,14 @@ int fd_main() {
 import titleMixin from "@/components/Helpers/titleMixin";
 import ExtImage from "@/components/Helpers/ExtImage";
 import CodeFragment from "@/components/Helpers/CodeFragment";
+import ExtLink from "@/components/Helpers/ExtLink";
 
 export default {
    name: "FondantToevoegen",
    components: {
       ExtImage,
-      CodeFragment
+      CodeFragment,
+      ExtLink
    },
    title: "Fondant toevoegen",
    mixins: [titleMixin]

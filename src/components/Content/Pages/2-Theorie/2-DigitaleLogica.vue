@@ -36,7 +36,7 @@
          Wat nou als een pin niet actief is aangestuurd naar hoog of laag? Dit kan bijvoorbeeld gebeuren als een draadje
          niet aangesloten is, of als een onderdeel
          in de schakeling kapot is. We spreken dan van een
-         <DefRef n="floating pin"/>
+         <DefRef n="floating" display="floating pin"/>
          . Deze geven vaak problemen in schakelingen die heel lastig
          te debuggen zijn. Loop dus altijd goed je schakelingen en instellingen na om te controleren of dit het geval
          is.
@@ -44,7 +44,7 @@
 
       <p>
          De reden dat het debuggen van een
-         <DefRef n="floating pin"/>
+         <DefRef n="floating" display="floating pin"/>
          erg lastig is, is omdat het gedrag van je schakeling erg onvoorstelbaar wordt.
          Je zou verwachten dat een niet aangesloten pin altijd een lage waarde meegeeft maar dit is niet zo. In de
          praktijk hebben floating pins heel erg "last"

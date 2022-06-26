@@ -38,10 +38,8 @@
         mounted() {
             this.carousel_index = current_id
             current_id += 1
-            console.log(this.$refs.carouselSlot.children)
             let i =0;
             for(let carouselItem of this.$refs.carouselSlot.children) {
-                console.log(carouselItem)
                 if(i === 0) {
                     carouselItem.classList.add("active");
                 }

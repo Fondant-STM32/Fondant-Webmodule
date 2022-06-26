@@ -1,5 +1,5 @@
 <template>
-   <span class="definition_reference" :class="{'pin': pin}" data-bs-toggle="tooltip" :title="definition">{{ n }}</span>
+   <span class="definition_reference" :class="{'pin': pin}" data-bs-toggle="tooltip" :title="definition">{{ display_value }}</span>
 </template>
 
 <script>
@@ -13,17 +13,23 @@ export default {
       pin: {
          type: Boolean,
          default: false
+      },
+      display: {
+         type: String,
+         default:null
       }
    },
    computed: {
       definition() {
-         console.log(this)
          let value = useDefinitions().value[this.n]
          if (!value) {
             console.log(`Unknown definition: ${this.n}`)
          }
 
          return value
+      },
+      display_value() {
+         return this.display || this.n;
       }
    },
    mounted() {

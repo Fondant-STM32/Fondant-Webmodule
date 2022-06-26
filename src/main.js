@@ -194,7 +194,9 @@ const router = createRouter({
             document.getElementById(to.hash.substring(1)).scrollIntoView({behavior: "smooth"});
             return false
         } else {
-            document.getElementById("content-container").scrollTo({top: 0, behavior: 'smooth'});
+            if(document.getElementsByClassName("content-container").length > 0) {
+                document.getElementsByClassName("content-container")?.[0]?.scrollTo({top: 0, behavior: 'smooth'});
+            }
             return false;
         }
     },
